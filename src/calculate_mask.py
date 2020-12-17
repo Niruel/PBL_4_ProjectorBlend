@@ -2,22 +2,17 @@
 # -*- coding: utf-8 -*-
 # ˅
 from config_reader import ConfigReader
-
-
-# ˄
+import cv2
 
 
 class CalculateMask(object):
-    # ˅
-    
-    # ˄
 
     def calculateIntensityLeft(self):
         # ˅
         pass
         # ˄
 
-    def calculateIntensityRight)(self):
+    def calculateIntensityRight(self):
         # ˅
         pass
         # ˄
@@ -36,5 +31,3 @@ class CalculateMask(object):
 
 
 # ˅
-
-# ˄
