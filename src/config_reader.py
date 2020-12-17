@@ -1,48 +1,50 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # ˅
-
+import image_rw
 # ˄
-
+import configparser
 
 class ConfigReader(object):
     # ˅
-    
+    def __init__ (self, filename):
+        self.config = configparser.ConfigParser()
+        self.config.read(filename)
     # ˄
 
     def getDistance(self):
         # ˅
-        pass
+        return float(self.config['projector_distance']['between_projector_distance'])
         # ˄
 
     def getWidth(self):
         # ˅
-        pass
+        return float(self.config['projector_distance']['half_projector_distance'])
         # ˄
 
     def getIMGWidth(self):
         # ˅
-        pass
+        return int(self.config['image']['img_width'])
         # ˄
 
     def getIMGHeight(self):
         # ˅
-        pass
+        return int(self.config['image']['img_height'])
         # ˄
 
-    def getImageName(self):
+    def getIMGName(self):
         # ˅
-        pass
+        return self.config['image']['img_name']
         # ˄
 
     def getGamma(self):
         # ˅
-        pass
+        return float(self.config['gamma_correction']['gamma'])
         # ˄
 
     def getProjectionType(self):
         # ˅
-        pass
+        return int(self.config['projection_type']['projector1'])
         # ˄
 
     def Update(self):
@@ -50,16 +52,9 @@ class ConfigReader(object):
         pass
         # ˄
 
-    def __init__(self):
-        # ˅
-        pass
-        # ˄
-
     # ˅
-    
     # ˄
 
 
 # ˅
-
 # ˄
