@@ -4,25 +4,23 @@
 from calculate_mask import CalculateMask
 from config_reader import ConfigReader
 from image_rw import ImageRW
-
+import numpy as np
+import cv2
 
 # ˄
 
 
-class MainStitcher(object):
-    # ˅
-    
-    # ˄
+class MainStitcher:
 
-    def Update(self):
-        # ˅
-        pass
-        # ˄
+    def stitchImage(self, leftPart, rightPart):
+        finalImage = np.hstack((leftPart[:,:], rightPart[:,:]))
+        return finalImage
 
-    def Display(self):
-        # ˅
-        pass
-        # ˄
+    def Display(self, finalLeft, finalRight):
+        cv2.imshow("Masked Left", finalLeft)
+        cv2.imshow("Masked Right", finalRight)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
     def __init__(self):
 
