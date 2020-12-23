@@ -4,6 +4,7 @@
 from config_reader import ConfigReader
 import cv2
 import numpy as np
+
 # ˄
 
 
@@ -26,14 +27,21 @@ class ImageRW:
         return leftImage, rightImage
 
     def writeLeftMask(self, leftImage):
-        leftUnmaskArea = leftImage[0:self.img_height, 0:self.img_width - self.maskArea]
         leftMaskArea = leftImage[0:self.img_height, self.img_width - self.maskArea:self.img_width] 
-        return leftUnmaskArea, leftMaskArea
+        return leftMaskArea
+
+    def writeLeftCroped (self, leftImage):
+        leftUnmaskArea = leftImage[0:self.img_height, 0:self.img_width - self.maskArea]
+        return leftUnmaskArea
 
     def writeRightMask(self, rightImage):
         rightMaskArea = rightImage[0:self.img_height, 0:self.maskArea]
+        
+        return rightMaskArea
+
+    def writeRightCroped(self, rightImage):
         rightUnmaskArea = rightImage[0:self.img_height, self.maskArea:self.img_width]
-        return rightUnmaskArea, rightMaskArea
+        return rightUnmaskArea
 
     def gammaCorrectLeft(self, leftMaskArea):
         maskLeft = np.tile(np.linspace(1, 0, self.maskArea), (self.img_height, 1))
@@ -53,4 +61,3 @@ class ImageRW:
 
     def writeFinalImage(self, image, filename):
         cv2.imwrite(filename, image)
-
