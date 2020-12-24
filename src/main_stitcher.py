@@ -1,14 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# ˅
-from calculate_mask import CalculateMask
-from config_reader import ConfigReader
-from image_rw import ImageRW
+
 import numpy as np
 import cv2
-
-# ˄
-
 
 class MainStitcher:
 
@@ -21,24 +15,3 @@ class MainStitcher:
         cv2.imshow("Masked Right", finalRight)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
-
-    def __init__(self):
-
-        self.__imageRW = None
-
-        self.__configReader = None
-
-        self.__calculateMask = None
-
-        # ˅
-        pass
-        # ˄
-
-    # ˅
-    
-    # ˄
-
-
-# ˅
-
-# ˄

@@ -1,12 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from image_rw import ImageRW
 from config_reader import ConfigReader
 from main_stitcher import MainStitcher
-from calculate_mask import CalculateMask
 
 leftImage, rightImage = ImageRW().getLeftRightImage()
 
-leftUnmaskArea, leftMaskArea = ImageRW().writeLeftMask(leftImage)
-rightUnmaskArea, rightMaskArea = ImageRW().writeRightMask(rightImage)
+leftUnmaskArea = ImageRW().writeLeftCropped(leftImage)
+leftMaskArea = ImageRW().writeLeftMask(leftImage)
+
+rightUnmaskArea = ImageRW().writeRightCropped(rightImage)
+rightMaskArea = ImageRW().writeRightMask(rightImage)
 
 maskLeft = ImageRW().gammaCorrectLeft(leftMaskArea)
 maskRight = ImageRW().gammaCorrectRight(rightMaskArea)

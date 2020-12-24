@@ -1,15 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# ˅
 from config_reader import ConfigReader
-import cv2
 import numpy as np
-
-# ˄
-
+import cv2
 
 class ImageRW:
-
+    
     def __init__(self):
         self.__configReader = ConfigReader("config.ini")
         self.filename = self.__configReader.getIMGName()
@@ -30,16 +26,15 @@ class ImageRW:
         leftMaskArea = leftImage[0:self.img_height, self.img_width - self.maskArea:self.img_width] 
         return leftMaskArea
 
-    def writeLeftCroped (self, leftImage):
+    def writeLeftCropped (self, leftImage):
         leftUnmaskArea = leftImage[0:self.img_height, 0:self.img_width - self.maskArea]
         return leftUnmaskArea
 
     def writeRightMask(self, rightImage):
         rightMaskArea = rightImage[0:self.img_height, 0:self.maskArea]
-        
         return rightMaskArea
 
-    def writeRightCroped(self, rightImage):
+    def writeRightCropped(self, rightImage):
         rightUnmaskArea = rightImage[0:self.img_height, self.maskArea:self.img_width]
         return rightUnmaskArea
 
