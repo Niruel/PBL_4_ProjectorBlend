@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classmain__stitcher_1_1_main_stitcher" kind="class" language="Python" prot="public">
+    <compoundname>main_stitcher::MainStitcher</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmain__stitcher_1_1_main_stitcher_1a96bb031e24b3811cef12d85176de0678" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main_stitcher.MainStitcher.stitchImage</definition>
+        <argsstring>(self, leftPart, rightPart)</argsstring>
+        <name>stitchImage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>leftPart</type>
+          <defname>leftPart</defname>
+        </param>
+        <param>
+          <type>rightPart</type>
+          <defname>rightPart</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main_stitcher.py" line="16" column="1" bodyfile="main_stitcher.py" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Documentation for main class <ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref> The constructor, used to stitch together the divided parts of the original image, returns the final image at the end of the class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Documentation for the class stitchImage this class is to stitch together the left and right parts of the image after being divided, and form a final image </para>
+    </detaileddescription>
+    <location file="main_stitcher.py" line="14" column="1" bodyfile="main_stitcher.py" bodystart="14" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classmain__stitcher_1_1_main_stitcher_1a96bb031e24b3811cef12d85176de0678" prot="public" virt="non-virtual"><scope>main_stitcher::MainStitcher</scope><name>stitchImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

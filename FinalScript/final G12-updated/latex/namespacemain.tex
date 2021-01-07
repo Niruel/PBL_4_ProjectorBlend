@@ -1,0 +1,148 @@
+\hypertarget{namespacemain}{}\doxysection{main Namespace Reference}
+\label{namespacemain}\index{main@{main}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{left\+Image}}
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{right\+Image}}
+\item 
+\mbox{\hyperlink{namespacemain_a1018ab43480185ef4266610c78843bc9}{left\+Unmask\+Area}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Left\+Cropped(\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{left\+Image}})
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning value to the variable left\+Unmask\+Area and left\+Mask\+Area defining the function of 2 variables left\+Unmask\+Area creates an unmasked area based on the left part of the image, specifically after being divided left\+Mask\+Area creates a masked area based on the left part of the iamge, specifically after being divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}{left\+Mask\+Area}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Left\+Mask(\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{left\+Image}})
+\item 
+\mbox{\hyperlink{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}{right\+Unmask\+Area}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Right\+Cropped(\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{right\+Image}})
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning value to the variable right\+Unmask\+Area and right\+Mask\+Area defining the function of 2 variables right\+Unmask\+Area creates an unmasked area based on the right part of the image, specifically after being divided right\+Mask\+Area creates a masked area based on the right part of the image, specifically after being divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}{right\+Mask\+Area}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Right\+Mask(\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{right\+Image}})
+\item 
+\mbox{\hyperlink{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}{mask\+Left}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().gamma\+Correct\+Left(\mbox{\hyperlink{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}{left\+Mask\+Area}})
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to varialbes mask\+Left and mask\+Right, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}{mask\+Right}} = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().gamma\+Correct\+Right(\mbox{\hyperlink{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}{right\+Mask\+Area}})
+\item 
+\mbox{\hyperlink{namespacemain_a4a1665c8e7e27237385bf1bf668fd5ac}{final\+Left}} = \mbox{\hyperlink{classmain__stitcher_1_1_main_stitcher}{Main\+Stitcher}}().stitch\+Image(\mbox{\hyperlink{namespacemain_a1018ab43480185ef4266610c78843bc9}{left\+Unmask\+Area}}, \mbox{\hyperlink{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}{mask\+Left}})
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to varialbes final\+Left and final\+Right, which are used to stitch the 2 parts of the image ater being divided final\+Left is to process the left part of the image after it\textquotesingle{}s gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries final\+Right is to process the right part of the image after it\textquotesingle{}s gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_aaafa0dbd93459bb2c5188ef01efcc755}{final\+Right}} = \mbox{\hyperlink{classmain__stitcher_1_1_main_stitcher}{Main\+Stitcher}}().stitch\+Image(\mbox{\hyperlink{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}{mask\+Right}}, \mbox{\hyperlink{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}{right\+Unmask\+Area}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemain_a4a1665c8e7e27237385bf1bf668fd5ac}\label{namespacemain_a4a1665c8e7e27237385bf1bf668fd5ac}} 
+\index{main@{main}!finalLeft@{finalLeft}}
+\index{finalLeft@{finalLeft}!main@{main}}
+\doxysubsubsection{\texorpdfstring{finalLeft}{finalLeft}}
+{\footnotesize\ttfamily main.\+final\+Left = \mbox{\hyperlink{classmain__stitcher_1_1_main_stitcher}{Main\+Stitcher}}().stitch\+Image(\mbox{\hyperlink{namespacemain_a1018ab43480185ef4266610c78843bc9}{left\+Unmask\+Area}}, \mbox{\hyperlink{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}{mask\+Left}})}
+
+
+
+Documentation for definition class assigning values to varialbes final\+Left and final\+Right, which are used to stitch the 2 parts of the image ater being divided final\+Left is to process the left part of the image after it\textquotesingle{}s gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries final\+Right is to process the right part of the image after it\textquotesingle{}s gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries. 
+
+
+
+Definition at line 40 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_aaafa0dbd93459bb2c5188ef01efcc755}\label{namespacemain_aaafa0dbd93459bb2c5188ef01efcc755}} 
+\index{main@{main}!finalRight@{finalRight}}
+\index{finalRight@{finalRight}!main@{main}}
+\doxysubsubsection{\texorpdfstring{finalRight}{finalRight}}
+{\footnotesize\ttfamily main.\+final\+Right = \mbox{\hyperlink{classmain__stitcher_1_1_main_stitcher}{Main\+Stitcher}}().stitch\+Image(\mbox{\hyperlink{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}{mask\+Right}}, \mbox{\hyperlink{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}{right\+Unmask\+Area}})}
+
+
+
+Definition at line 41 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}\label{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}} 
+\index{main@{main}!leftImage@{leftImage}}
+\index{leftImage@{leftImage}!main@{main}}
+\doxysubsubsection{\texorpdfstring{leftImage}{leftImage}}
+{\footnotesize\ttfamily main.\+left\+Image}
+
+
+
+Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image. 
+
+
+
+Definition at line 12 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}\label{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}} 
+\index{main@{main}!leftMaskArea@{leftMaskArea}}
+\index{leftMaskArea@{leftMaskArea}!main@{main}}
+\doxysubsubsection{\texorpdfstring{leftMaskArea}{leftMaskArea}}
+{\footnotesize\ttfamily main.\+left\+Mask\+Area = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Left\+Mask(\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{left\+Image}})}
+
+
+
+Definition at line 20 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_a1018ab43480185ef4266610c78843bc9}\label{namespacemain_a1018ab43480185ef4266610c78843bc9}} 
+\index{main@{main}!leftUnmaskArea@{leftUnmaskArea}}
+\index{leftUnmaskArea@{leftUnmaskArea}!main@{main}}
+\doxysubsubsection{\texorpdfstring{leftUnmaskArea}{leftUnmaskArea}}
+{\footnotesize\ttfamily main.\+left\+Unmask\+Area = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Left\+Cropped(\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{left\+Image}})}
+
+
+
+Documentation for definition class assigning value to the variable left\+Unmask\+Area and left\+Mask\+Area defining the function of 2 variables left\+Unmask\+Area creates an unmasked area based on the left part of the image, specifically after being divided left\+Mask\+Area creates a masked area based on the left part of the iamge, specifically after being divided. 
+
+
+
+Definition at line 19 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}\label{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}} 
+\index{main@{main}!maskLeft@{maskLeft}}
+\index{maskLeft@{maskLeft}!main@{main}}
+\doxysubsubsection{\texorpdfstring{maskLeft}{maskLeft}}
+{\footnotesize\ttfamily main.\+mask\+Left = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().gamma\+Correct\+Left(\mbox{\hyperlink{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}{left\+Mask\+Area}})}
+
+
+
+Documentation for definition class assigning values to varialbes mask\+Left and mask\+Right, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided. 
+
+
+
+Definition at line 33 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}\label{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}} 
+\index{main@{main}!maskRight@{maskRight}}
+\index{maskRight@{maskRight}!main@{main}}
+\doxysubsubsection{\texorpdfstring{maskRight}{maskRight}}
+{\footnotesize\ttfamily main.\+mask\+Right = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().gamma\+Correct\+Right(\mbox{\hyperlink{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}{right\+Mask\+Area}})}
+
+
+
+Definition at line 34 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_a708ac4ec7a137f02058272200cd88914}\label{namespacemain_a708ac4ec7a137f02058272200cd88914}} 
+\index{main@{main}!rightImage@{rightImage}}
+\index{rightImage@{rightImage}!main@{main}}
+\doxysubsubsection{\texorpdfstring{rightImage}{rightImage}}
+{\footnotesize\ttfamily main.\+right\+Image}
+
+
+
+Definition at line 12 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}\label{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}} 
+\index{main@{main}!rightMaskArea@{rightMaskArea}}
+\index{rightMaskArea@{rightMaskArea}!main@{main}}
+\doxysubsubsection{\texorpdfstring{rightMaskArea}{rightMaskArea}}
+{\footnotesize\ttfamily main.\+right\+Mask\+Area = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Right\+Mask(\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{right\+Image}})}
+
+
+
+Definition at line 28 of file main.\+py.
+
+\mbox{\Hypertarget{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}\label{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}} 
+\index{main@{main}!rightUnmaskArea@{rightUnmaskArea}}
+\index{rightUnmaskArea@{rightUnmaskArea}!main@{main}}
+\doxysubsubsection{\texorpdfstring{rightUnmaskArea}{rightUnmaskArea}}
+{\footnotesize\ttfamily main.\+right\+Unmask\+Area = \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}().write\+Right\+Cropped(\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{right\+Image}})}
+
+
+
+Documentation for definition class assigning value to the variable right\+Unmask\+Area and right\+Mask\+Area defining the function of 2 variables right\+Unmask\+Area creates an unmasked area based on the right part of the image, specifically after being divided right\+Mask\+Area creates a masked area based on the right part of the image, specifically after being divided. 
+
+
+
+Definition at line 27 of file main.\+py.
+

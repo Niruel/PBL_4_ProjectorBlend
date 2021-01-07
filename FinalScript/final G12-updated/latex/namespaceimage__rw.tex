@@ -1,0 +1,146 @@
+\hypertarget{namespaceimage__rw}{}\doxysection{image\+\_\+rw Namespace Reference}
+\label{namespaceimage__rw}\index{image\_rw@{image\_rw}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}}
+\begin{DoxyCompactList}\small\item\em The main class \mbox{\hyperlink{classimage__rw_1_1_image_r_w}{Image\+RW}} The class is for reading and writing the image, reading in image values and writing in new values to variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceimage__rw_aa760c877a2ff5504d4862fe656470f98}{get\+Left\+Right\+Image}} (self)
+\begin{DoxyCompactList}\small\item\em The class is used to retrieve the divided parts of the original image after being divided. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_a4849b187732b295b535b76c34b222dd3}{write\+Left\+Mask}} (self, left\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for the class write\+Left\+Mask This class is to mask the left part of divided image, specifically the left part after being divide. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_a2b0f6ca8697f0fe29bcf856642bedfc5}{write\+Left\+Cropped}} (self, left\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for the class writeleft\+Cropped This class is to get the left part of unmask area of the iamge. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_a5779dcf65a6aaaf08b1fd0c5bc65644e}{write\+Right\+Mask}} (self, right\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for the class write\+Right\+Mask This class is to mask the left part of divided image, specifically the right part after being divided. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_ac4672f2acd58fd1c906dddeb6589e9d0}{write\+Right\+Cropped}} (self, right\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for the class write\+Right\+Cropped This class is to get the right part of unmask area of the iamge. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_ab233309fe856ef22ae1aa4a143eb8278}{gamma\+Correct\+Left}} (self, left\+Mask\+Area)
+\begin{DoxyCompactList}\small\item\em Documentation for the class gamma\+Correct\+Left This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_a73ecd3f8380f6de6ac88b92432f87399}{gamma\+Correct\+Right}} (self, right\+Mask\+Area)
+\begin{DoxyCompactList}\small\item\em Documentation for the class gamma\+Correct\+Right This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceimage__rw_aa2c76bea77bec61419f9acdfc43481ac}{write\+Final\+Image}} (self, image, filename)
+\begin{DoxyCompactList}\small\item\em Documentation for the class write\+Final\+Image the final image after the execution of all previous processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceimage__rw_ab233309fe856ef22ae1aa4a143eb8278}\label{namespaceimage__rw_ab233309fe856ef22ae1aa4a143eb8278}} 
+\index{image\_rw@{image\_rw}!gammaCorrectLeft@{gammaCorrectLeft}}
+\index{gammaCorrectLeft@{gammaCorrectLeft}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{gammaCorrectLeft()}{gammaCorrectLeft()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+gamma\+Correct\+Left (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left\+Mask\+Area }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class gamma\+Correct\+Left This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided. 
+
+
+
+Definition at line 67 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_a73ecd3f8380f6de6ac88b92432f87399}\label{namespaceimage__rw_a73ecd3f8380f6de6ac88b92432f87399}} 
+\index{image\_rw@{image\_rw}!gammaCorrectRight@{gammaCorrectRight}}
+\index{gammaCorrectRight@{gammaCorrectRight}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{gammaCorrectRight()}{gammaCorrectRight()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+gamma\+Correct\+Right (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{right\+Mask\+Area }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class gamma\+Correct\+Right This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided. 
+
+
+
+Definition at line 77 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_aa760c877a2ff5504d4862fe656470f98}\label{namespaceimage__rw_aa760c877a2ff5504d4862fe656470f98}} 
+\index{image\_rw@{image\_rw}!getLeftRightImage@{getLeftRightImage}}
+\index{getLeftRightImage@{getLeftRightImage}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{getLeftRightImage()}{getLeftRightImage()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+get\+Left\+Right\+Image (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+The class is used to retrieve the divided parts of the original image after being divided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & is the object pointer, points to the class itself \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_aa2c76bea77bec61419f9acdfc43481ac}\label{namespaceimage__rw_aa2c76bea77bec61419f9acdfc43481ac}} 
+\index{image\_rw@{image\_rw}!writeFinalImage@{writeFinalImage}}
+\index{writeFinalImage@{writeFinalImage}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{writeFinalImage()}{writeFinalImage()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+write\+Final\+Image (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{image,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class write\+Final\+Image the final image after the execution of all previous processes. 
+
+write the final image in and update/replace the old unprocessed image 
+
+Definition at line 86 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_a2b0f6ca8697f0fe29bcf856642bedfc5}\label{namespaceimage__rw_a2b0f6ca8697f0fe29bcf856642bedfc5}} 
+\index{image\_rw@{image\_rw}!writeLeftCropped@{writeLeftCropped}}
+\index{writeLeftCropped@{writeLeftCropped}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{writeLeftCropped()}{writeLeftCropped()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+write\+Left\+Cropped (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left\+Image }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class writeleft\+Cropped This class is to get the left part of unmask area of the iamge. 
+
+
+
+Definition at line 49 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_a4849b187732b295b535b76c34b222dd3}\label{namespaceimage__rw_a4849b187732b295b535b76c34b222dd3}} 
+\index{image\_rw@{image\_rw}!writeLeftMask@{writeLeftMask}}
+\index{writeLeftMask@{writeLeftMask}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{writeLeftMask()}{writeLeftMask()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+write\+Left\+Mask (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left\+Image }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class write\+Left\+Mask This class is to mask the left part of divided image, specifically the left part after being divide. 
+
+
+
+Definition at line 43 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_ac4672f2acd58fd1c906dddeb6589e9d0}\label{namespaceimage__rw_ac4672f2acd58fd1c906dddeb6589e9d0}} 
+\index{image\_rw@{image\_rw}!writeRightCropped@{writeRightCropped}}
+\index{writeRightCropped@{writeRightCropped}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{writeRightCropped()}{writeRightCropped()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+write\+Right\+Cropped (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{right\+Image }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class write\+Right\+Cropped This class is to get the right part of unmask area of the iamge. 
+
+
+
+Definition at line 61 of file image\+\_\+rw.\+py.
+
+\mbox{\Hypertarget{namespaceimage__rw_a5779dcf65a6aaaf08b1fd0c5bc65644e}\label{namespaceimage__rw_a5779dcf65a6aaaf08b1fd0c5bc65644e}} 
+\index{image\_rw@{image\_rw}!writeRightMask@{writeRightMask}}
+\index{writeRightMask@{writeRightMask}!image\_rw@{image\_rw}}
+\doxysubsubsection{\texorpdfstring{writeRightMask()}{writeRightMask()}}
+{\footnotesize\ttfamily def image\+\_\+rw.\+write\+Right\+Mask (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{right\+Image }\end{DoxyParamCaption})}
+
+
+
+Documentation for the class write\+Right\+Mask This class is to mask the left part of divided image, specifically the right part after being divided. 
+
+
+
+Definition at line 55 of file image\+\_\+rw.\+py.
+

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+  <compound refid="classconfig__reader_1_1_config_reader" kind="class"><name>config_reader::ConfigReader</name>
+    <member refid="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" kind="variable"><name>config</name></member>
+    <member refid="classconfig__reader_1_1_config_reader_1aa247f76066b6227f08bcf6aec6e5b289" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classimage__rw_1_1_image_r_w" kind="class"><name>image_rw::ImageRW</name>
+    <member refid="classimage__rw_1_1_image_r_w_1ab34e264d4f96573361288d6304f8ff86" kind="variable"><name>__configReader</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1a65b183b49cf325980427602c0ddf633c" kind="variable"><name>filename</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1afb0e1dc64838dfec2d0e89dfd70a2862" kind="variable"><name>img_width</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1a5d609052a3dccf1f06248996b33b588b" kind="variable"><name>img_height</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1a83255399315ad1c49a4b1585ca0005f3" kind="variable"><name>distance</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1acaef6d120a9ec32935a3f41cdf6b92dd" kind="variable"><name>projector</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1aaf8199d8076cef776cd8732d608f8878" kind="variable"><name>originalImage</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1a0a285e96a34606a52c557bf611842f4c" kind="variable"><name>maskArea</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1a7c20bd004393d589aa1bcb4d2423170e" kind="variable"><name>gammaRate</name></member>
+    <member refid="classimage__rw_1_1_image_r_w_1ab0c2513f4ef8195a69cb23b7324936e7" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classmain__stitcher_1_1_main_stitcher" kind="class"><name>main_stitcher::MainStitcher</name>
+    <member refid="classmain__stitcher_1_1_main_stitcher_1a96bb031e24b3811cef12d85176de0678" kind="function"><name>stitchImage</name></member>
+  </compound>
+  <compound refid="namespaceconfig__reader" kind="namespace"><name>config_reader</name>
+    <member refid="namespaceconfig__reader_1a9ec89050b492b2ef828a27db22f3fd45" kind="function"><name>getDistance</name></member>
+    <member refid="namespaceconfig__reader_1a8d763691199dc6d532405189b1359830" kind="function"><name>getWidth</name></member>
+    <member refid="namespaceconfig__reader_1a0f1066ed7dcaf74e7e6dcc33da6dd0a5" kind="function"><name>getIMGWidth</name></member>
+    <member refid="namespaceconfig__reader_1aee73b96dcc17fefe0bd13d24a32e826f" kind="function"><name>getIMGHeight</name></member>
+    <member refid="namespaceconfig__reader_1add941a1e87e3f2b20e7a424eec796cdb" kind="function"><name>getIMGName</name></member>
+    <member refid="namespaceconfig__reader_1a9ceb1fc9aa6fb70ca9c27d8a051f7e2c" kind="function"><name>getGamma</name></member>
+  </compound>
+  <compound refid="namespaceimage__rw" kind="namespace"><name>image_rw</name>
+    <member refid="namespaceimage__rw_1aa760c877a2ff5504d4862fe656470f98" kind="function"><name>getLeftRightImage</name></member>
+    <member refid="namespaceimage__rw_1a4849b187732b295b535b76c34b222dd3" kind="function"><name>writeLeftMask</name></member>
+    <member refid="namespaceimage__rw_1a2b0f6ca8697f0fe29bcf856642bedfc5" kind="function"><name>writeLeftCropped</name></member>
+    <member refid="namespaceimage__rw_1a5779dcf65a6aaaf08b1fd0c5bc65644e" kind="function"><name>writeRightMask</name></member>
+    <member refid="namespaceimage__rw_1ac4672f2acd58fd1c906dddeb6589e9d0" kind="function"><name>writeRightCropped</name></member>
+    <member refid="namespaceimage__rw_1ab233309fe856ef22ae1aa4a143eb8278" kind="function"><name>gammaCorrectLeft</name></member>
+    <member refid="namespaceimage__rw_1a73ecd3f8380f6de6ac88b92432f87399" kind="function"><name>gammaCorrectRight</name></member>
+    <member refid="namespaceimage__rw_1aa2c76bea77bec61419f9acdfc43481ac" kind="function"><name>writeFinalImage</name></member>
+  </compound>
+  <compound refid="namespacemain" kind="namespace"><name>main</name>
+    <member refid="namespacemain_1ac9b7d0904193a13f765d94ec98c2973f" kind="variable"><name>leftImage</name></member>
+    <member refid="namespacemain_1a708ac4ec7a137f02058272200cd88914" kind="variable"><name>rightImage</name></member>
+    <member refid="namespacemain_1a1018ab43480185ef4266610c78843bc9" kind="variable"><name>leftUnmaskArea</name></member>
+    <member refid="namespacemain_1a0b5e23d286a7e52bb6e1f000afa81fe0" kind="variable"><name>leftMaskArea</name></member>
+    <member refid="namespacemain_1ae2372092f3b18cc227874b5cf63c8a62" kind="variable"><name>rightUnmaskArea</name></member>
+    <member refid="namespacemain_1a55f6c93a1806f70f69848a6440f1e2f2" kind="variable"><name>rightMaskArea</name></member>
+    <member refid="namespacemain_1a7e4dc3953971e55a0579b1d0cdcca6c7" kind="variable"><name>maskLeft</name></member>
+    <member refid="namespacemain_1ab5ba24812c4aab089f46d7baeb6f0aa9" kind="variable"><name>maskRight</name></member>
+    <member refid="namespacemain_1a4a1665c8e7e27237385bf1bf668fd5ac" kind="variable"><name>finalLeft</name></member>
+    <member refid="namespacemain_1aaafa0dbd93459bb2c5188ef01efcc755" kind="variable"><name>finalRight</name></member>
+  </compound>
+  <compound refid="namespacemain__stitcher" kind="namespace"><name>main_stitcher</name>
+    <member refid="namespacemain__stitcher_1a773ec2d90bc90aa1537f38dcb46ca6ba" kind="function"><name>Display</name></member>
+  </compound>
+  <compound refid="config__reader_8py" kind="file"><name>config_reader.py</name>
+  </compound>
+  <compound refid="image__rw_8py" kind="file"><name>image_rw.py</name>
+  </compound>
+  <compound refid="main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="main__stitcher_8py" kind="file"><name>main_stitcher.py</name>
+  </compound>
+</doxygenindex>

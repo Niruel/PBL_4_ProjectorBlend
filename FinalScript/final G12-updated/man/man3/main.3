@@ -1,0 +1,102 @@
+.TH "main" 3 "Thu Jan 7 2021" "G12 PBL 4 project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBleftImage\fP"
+.br
+.RI "Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image\&. "
+.ti -1c
+.RI "\fBrightImage\fP"
+.br
+.ti -1c
+.RI "\fBleftUnmaskArea\fP = \fBImageRW\fP()\&.writeLeftCropped(\fBleftImage\fP)"
+.br
+.RI "Documentation for definition class assigning value to the variable leftUnmaskArea and leftMaskArea defining the function of 2 variables leftUnmaskArea creates an unmasked area based on the left part of the image, specifically after being divided leftMaskArea creates a masked area based on the left part of the iamge, specifically after being divided\&. "
+.ti -1c
+.RI "\fBleftMaskArea\fP = \fBImageRW\fP()\&.writeLeftMask(\fBleftImage\fP)"
+.br
+.ti -1c
+.RI "\fBrightUnmaskArea\fP = \fBImageRW\fP()\&.writeRightCropped(\fBrightImage\fP)"
+.br
+.RI "Documentation for definition class assigning value to the variable rightUnmaskArea and rightMaskArea defining the function of 2 variables rightUnmaskArea creates an unmasked area based on the right part of the image, specifically after being divided rightMaskArea creates a masked area based on the right part of the image, specifically after being divided\&. "
+.ti -1c
+.RI "\fBrightMaskArea\fP = \fBImageRW\fP()\&.writeRightMask(\fBrightImage\fP)"
+.br
+.ti -1c
+.RI "\fBmaskLeft\fP = \fBImageRW\fP()\&.gammaCorrectLeft(\fBleftMaskArea\fP)"
+.br
+.RI "Documentation for definition class assigning values to varialbes maskLeft and maskRight, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided\&. "
+.ti -1c
+.RI "\fBmaskRight\fP = \fBImageRW\fP()\&.gammaCorrectRight(\fBrightMaskArea\fP)"
+.br
+.ti -1c
+.RI "\fBfinalLeft\fP = \fBMainStitcher\fP()\&.stitchImage(\fBleftUnmaskArea\fP, \fBmaskLeft\fP)"
+.br
+.RI "Documentation for definition class assigning values to varialbes finalLeft and finalRight, which are used to stitch the 2 parts of the image ater being divided finalLeft is to process the left part of the image after it's gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries finalRight is to process the right part of the image after it's gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries\&. "
+.ti -1c
+.RI "\fBfinalRight\fP = \fBMainStitcher\fP()\&.stitchImage(\fBmaskRight\fP, \fBrightUnmaskArea\fP)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "main\&.finalLeft = \fBMainStitcher\fP()\&.stitchImage(\fBleftUnmaskArea\fP, \fBmaskLeft\fP)"
+
+.PP
+Documentation for definition class assigning values to varialbes finalLeft and finalRight, which are used to stitch the 2 parts of the image ater being divided finalLeft is to process the left part of the image after it's gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries finalRight is to process the right part of the image after it's gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries\&. 
+.PP
+Definition at line 40 of file main\&.py\&.
+.SS "main\&.finalRight = \fBMainStitcher\fP()\&.stitchImage(\fBmaskRight\fP, \fBrightUnmaskArea\fP)"
+
+.PP
+Definition at line 41 of file main\&.py\&.
+.SS "main\&.leftImage"
+
+.PP
+Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image\&. 
+.PP
+Definition at line 12 of file main\&.py\&.
+.SS "main\&.leftMaskArea = \fBImageRW\fP()\&.writeLeftMask(\fBleftImage\fP)"
+
+.PP
+Definition at line 20 of file main\&.py\&.
+.SS "main\&.leftUnmaskArea = \fBImageRW\fP()\&.writeLeftCropped(\fBleftImage\fP)"
+
+.PP
+Documentation for definition class assigning value to the variable leftUnmaskArea and leftMaskArea defining the function of 2 variables leftUnmaskArea creates an unmasked area based on the left part of the image, specifically after being divided leftMaskArea creates a masked area based on the left part of the iamge, specifically after being divided\&. 
+.PP
+Definition at line 19 of file main\&.py\&.
+.SS "main\&.maskLeft = \fBImageRW\fP()\&.gammaCorrectLeft(\fBleftMaskArea\fP)"
+
+.PP
+Documentation for definition class assigning values to varialbes maskLeft and maskRight, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided\&. 
+.PP
+Definition at line 33 of file main\&.py\&.
+.SS "main\&.maskRight = \fBImageRW\fP()\&.gammaCorrectRight(\fBrightMaskArea\fP)"
+
+.PP
+Definition at line 34 of file main\&.py\&.
+.SS "main\&.rightImage"
+
+.PP
+Definition at line 12 of file main\&.py\&.
+.SS "main\&.rightMaskArea = \fBImageRW\fP()\&.writeRightMask(\fBrightImage\fP)"
+
+.PP
+Definition at line 28 of file main\&.py\&.
+.SS "main\&.rightUnmaskArea = \fBImageRW\fP()\&.writeRightCropped(\fBrightImage\fP)"
+
+.PP
+Documentation for definition class assigning value to the variable rightUnmaskArea and rightMaskArea defining the function of 2 variables rightUnmaskArea creates an unmasked area based on the right part of the image, specifically after being divided rightMaskArea creates a masked area based on the right part of the image, specifically after being divided\&. 
+.PP
+Definition at line 27 of file main\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for G12 PBL 4 project from the source code\&.

@@ -1,0 +1,62 @@
+.TH "image_rw.py" 3 "Thu Jan 7 2021" "G12 PBL 4 project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+image_rw.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBimage_rw\&.ImageRW\fP"
+.br
+.RI "The main class \fBImageRW\fP The class is for reading and writing the image, reading in image values and writing in new values to variables\&. "
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBimage_rw\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBimage_rw\&.getLeftRightImage\fP (self)"
+.br
+.RI "The class is used to retrieve the divided parts of the original image after being divided\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.writeLeftMask\fP (self, leftImage)"
+.br
+.RI "Documentation for the class writeLeftMask This class is to mask the left part of divided image, specifically the left part after being divide\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.writeLeftCropped\fP (self, leftImage)"
+.br
+.RI "Documentation for the class writeleftCropped This class is to get the left part of unmask area of the iamge\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.writeRightMask\fP (self, rightImage)"
+.br
+.RI "Documentation for the class writeRightMask This class is to mask the left part of divided image, specifically the right part after being divided\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.writeRightCropped\fP (self, rightImage)"
+.br
+.RI "Documentation for the class writeRightCropped This class is to get the right part of unmask area of the iamge\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.gammaCorrectLeft\fP (self, leftMaskArea)"
+.br
+.RI "Documentation for the class gammaCorrectLeft This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.gammaCorrectRight\fP (self, rightMaskArea)"
+.br
+.RI "Documentation for the class gammaCorrectRight This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided\&. "
+.ti -1c
+.RI "def \fBimage_rw\&.writeFinalImage\fP (self, image, filename)"
+.br
+.RI "Documentation for the class writeFinalImage the final image after the execution of all previous processes\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for G12 PBL 4 project from the source code\&.

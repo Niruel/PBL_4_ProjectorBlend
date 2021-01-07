@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classimage__rw_1_1_image_r_w" kind="class" language="Python" prot="public">
+    <compoundname>image_rw::ImageRW</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1ab34e264d4f96573361288d6304f8ff86" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::__configReader</definition>
+        <argsstring></argsstring>
+        <name>__configReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="24" column="1" bodyfile="image_rw.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1a65b183b49cf325980427602c0ddf633c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="25" column="1" bodyfile="image_rw.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1afb0e1dc64838dfec2d0e89dfd70a2862" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::img_width</definition>
+        <argsstring></argsstring>
+        <name>img_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="26" column="1" bodyfile="image_rw.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1a5d609052a3dccf1f06248996b33b588b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::img_height</definition>
+        <argsstring></argsstring>
+        <name>img_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="27" column="1" bodyfile="image_rw.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1a83255399315ad1c49a4b1585ca0005f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="28" column="1" bodyfile="image_rw.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1acaef6d120a9ec32935a3f41cdf6b92dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::projector</definition>
+        <argsstring></argsstring>
+        <name>projector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="29" column="1" bodyfile="image_rw.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1aaf8199d8076cef776cd8732d608f8878" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::originalImage</definition>
+        <argsstring></argsstring>
+        <name>originalImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="30" column="1" bodyfile="image_rw.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1a0a285e96a34606a52c557bf611842f4c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::maskArea</definition>
+        <argsstring></argsstring>
+        <name>maskArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="31" column="1" bodyfile="image_rw.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimage__rw_1_1_image_r_w_1a7c20bd004393d589aa1bcb4d2423170e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>image_rw.ImageRW::gammaRate</definition>
+        <argsstring></argsstring>
+        <name>gammaRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="32" column="1" bodyfile="image_rw.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimage__rw_1_1_image_r_w_1ab0c2513f4ef8195a69cb23b7324936e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.ImageRW.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>main class The constructor, defining all the methods of the main class </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="23" column="1" bodyfile="image_rw.py" bodystart="23" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The main class <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref> The class is for reading and writing the image, reading in image values and writing in new values to variables. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="image_rw.py" line="18" column="1" bodyfile="image_rw.py" bodystart="18" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classimage__rw_1_1_image_r_w_1ab34e264d4f96573361288d6304f8ff86" prot="private" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>__configReader</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1ab0c2513f4ef8195a69cb23b7324936e7" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>__init__</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1a83255399315ad1c49a4b1585ca0005f3" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>distance</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1a65b183b49cf325980427602c0ddf633c" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>filename</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1a7c20bd004393d589aa1bcb4d2423170e" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>gammaRate</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1a5d609052a3dccf1f06248996b33b588b" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>img_height</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1afb0e1dc64838dfec2d0e89dfd70a2862" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>img_width</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1a0a285e96a34606a52c557bf611842f4c" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>maskArea</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1aaf8199d8076cef776cd8732d608f8878" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>originalImage</name></member>
+      <member refid="classimage__rw_1_1_image_r_w_1acaef6d120a9ec32935a3f41cdf6b92dd" prot="public" virt="non-virtual"><scope>image_rw::ImageRW</scope><name>projector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="main_8py" kind="file" language="Python">
+    <compoundname>main.py</compoundname>
+    <innernamespace refid="namespacemain">main</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacemain" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>image_rw<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ImageRW</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>main_stitcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MainStitcher</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacemain_1a708ac4ec7a137f02058272200cd88914" refkind="member"><highlight class="normal">leftImage,<sp/>rightImage<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1aa760c877a2ff5504d4862fe656470f98" kindref="member">getLeftRightImage</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacemain_1a1018ab43480185ef4266610c78843bc9" refkind="member"><highlight class="normal">leftUnmaskArea<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1a2b0f6ca8697f0fe29bcf856642bedfc5" kindref="member">writeLeftCropped</ref>(leftImage)</highlight></codeline>
+<codeline lineno="20" refid="namespacemain_1a0b5e23d286a7e52bb6e1f000afa81fe0" refkind="member"><highlight class="normal">leftMaskArea<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1a4849b187732b295b535b76c34b222dd3" kindref="member">writeLeftMask</ref>(leftImage)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacemain_1ae2372092f3b18cc227874b5cf63c8a62" refkind="member"><highlight class="normal">rightUnmaskArea<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1ac4672f2acd58fd1c906dddeb6589e9d0" kindref="member">writeRightCropped</ref>(rightImage)</highlight></codeline>
+<codeline lineno="28" refid="namespacemain_1a55f6c93a1806f70f69848a6440f1e2f2" refkind="member"><highlight class="normal">rightMaskArea<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1a5779dcf65a6aaaf08b1fd0c5bc65644e" kindref="member">writeRightMask</ref>(rightImage)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacemain_1a7e4dc3953971e55a0579b1d0cdcca6c7" refkind="member"><highlight class="normal">maskLeft<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1ab233309fe856ef22ae1aa4a143eb8278" kindref="member">gammaCorrectLeft</ref>(leftMaskArea)</highlight></codeline>
+<codeline lineno="34" refid="namespacemain_1ab5ba24812c4aab089f46d7baeb6f0aa9" refkind="member"><highlight class="normal">maskRight<sp/>=<sp/><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1a73ecd3f8380f6de6ac88b92432f87399" kindref="member">gammaCorrectRight</ref>(rightMaskArea)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespacemain_1a4a1665c8e7e27237385bf1bf668fd5ac" refkind="member"><highlight class="normal">finalLeft<sp/>=<sp/><ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref>().stitchImage(leftUnmaskArea,<sp/>maskLeft)</highlight></codeline>
+<codeline lineno="41" refid="namespacemain_1aaafa0dbd93459bb2c5188ef01efcc755" refkind="member"><highlight class="normal">finalRight<sp/>=<sp/><ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref>().stitchImage(maskRight,<sp/>rightUnmaskArea)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref>().<ref refid="namespacemain__stitcher_1a773ec2d90bc90aa1537f38dcb46ca6ba" kindref="member">Display</ref>(finalLeft,<sp/>finalRight)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1aa2c76bea77bec61419f9acdfc43481ac" kindref="member">writeFinalImage</ref>(finalLeft,<sp/></highlight><highlight class="stringliteral">&quot;Masked_Left.jpg&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().<ref refid="namespaceimage__rw_1aa2c76bea77bec61419f9acdfc43481ac" kindref="member">writeFinalImage</ref>(finalRight,<sp/></highlight><highlight class="stringliteral">&quot;Masked_Right.jpg&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="main.py"/>
+  </compounddef>
+</doxygen>

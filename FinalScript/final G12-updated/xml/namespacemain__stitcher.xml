@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespacemain__stitcher" kind="namespace" language="Python">
+    <compoundname>main_stitcher</compoundname>
+    <innerclass refid="classmain__stitcher_1_1_main_stitcher" prot="public">main_stitcher::MainStitcher</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemain__stitcher_1a773ec2d90bc90aa1537f38dcb46ca6ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main_stitcher.Display</definition>
+        <argsstring>(self, finalLeft, finalRight)</argsstring>
+        <name>Display</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>finalLeft</type>
+          <defname>finalLeft</defname>
+        </param>
+        <param>
+          <type>finalRight</type>
+          <defname>finalRight</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class Display used to display the final image after being finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main_stitcher.py" line="24" column="1" bodyfile="main_stitcher.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="main_stitcher.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

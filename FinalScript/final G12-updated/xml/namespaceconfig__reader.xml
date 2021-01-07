@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespaceconfig__reader" kind="namespace" language="Python">
+    <compoundname>config_reader</compoundname>
+    <innerclass refid="classconfig__reader_1_1_config_reader" prot="public">config_reader::ConfigReader</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceconfig__reader_1a9ec89050b492b2ef828a27db22f3fd45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getDistance</definition>
+        <argsstring>(self)</argsstring>
+        <name>getDistance</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the distance between the projectors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="24" column="1" bodyfile="config_reader.py" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceconfig__reader_1a8d763691199dc6d532405189b1359830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getWidth</definition>
+        <argsstring>(self)</argsstring>
+        <name>getWidth</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve width of the image being projected on the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="29" column="1" bodyfile="config_reader.py" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceconfig__reader_1a0f1066ed7dcaf74e7e6dcc33da6dd0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getIMGWidth</definition>
+        <argsstring>(self)</argsstring>
+        <name>getIMGWidth</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the actual width value of the image( how many pixels is the iamge width comprised of) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="34" column="1" bodyfile="config_reader.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceconfig__reader_1aee73b96dcc17fefe0bd13d24a32e826f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getIMGHeight</definition>
+        <argsstring>(self)</argsstring>
+        <name>getIMGHeight</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the actual height value of the image( how many pixels is the iamge height comprised of) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="39" column="1" bodyfile="config_reader.py" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceconfig__reader_1add941a1e87e3f2b20e7a424eec796cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getIMGName</definition>
+        <argsstring>(self)</argsstring>
+        <name>getIMGName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the name of the image ( assigned string value of the image name variable) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="44" column="1" bodyfile="config_reader.py" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceconfig__reader_1a9ceb1fc9aa6fb70ca9c27d8a051f7e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.getGamma</definition>
+        <argsstring>(self)</argsstring>
+        <name>getGamma</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the gamma value of image, used for gamma correction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="49" column="1" bodyfile="config_reader.py" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="config_reader.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

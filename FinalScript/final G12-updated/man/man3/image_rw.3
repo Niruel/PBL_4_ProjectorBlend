@@ -1,0 +1,112 @@
+.TH "image_rw" 3 "Thu Jan 7 2021" "G12 PBL 4 project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+image_rw
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBImageRW\fP"
+.br
+.RI "The main class \fBImageRW\fP The class is for reading and writing the image, reading in image values and writing in new values to variables\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetLeftRightImage\fP (self)"
+.br
+.RI "The class is used to retrieve the divided parts of the original image after being divided\&. "
+.ti -1c
+.RI "def \fBwriteLeftMask\fP (self, leftImage)"
+.br
+.RI "Documentation for the class writeLeftMask This class is to mask the left part of divided image, specifically the left part after being divide\&. "
+.ti -1c
+.RI "def \fBwriteLeftCropped\fP (self, leftImage)"
+.br
+.RI "Documentation for the class writeleftCropped This class is to get the left part of unmask area of the iamge\&. "
+.ti -1c
+.RI "def \fBwriteRightMask\fP (self, rightImage)"
+.br
+.RI "Documentation for the class writeRightMask This class is to mask the left part of divided image, specifically the right part after being divided\&. "
+.ti -1c
+.RI "def \fBwriteRightCropped\fP (self, rightImage)"
+.br
+.RI "Documentation for the class writeRightCropped This class is to get the right part of unmask area of the iamge\&. "
+.ti -1c
+.RI "def \fBgammaCorrectLeft\fP (self, leftMaskArea)"
+.br
+.RI "Documentation for the class gammaCorrectLeft This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided\&. "
+.ti -1c
+.RI "def \fBgammaCorrectRight\fP (self, rightMaskArea)"
+.br
+.RI "Documentation for the class gammaCorrectRight This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided\&. "
+.ti -1c
+.RI "def \fBwriteFinalImage\fP (self, image, filename)"
+.br
+.RI "Documentation for the class writeFinalImage the final image after the execution of all previous processes\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def image_rw\&.gammaCorrectLeft ( self,  leftMaskArea)"
+
+.PP
+Documentation for the class gammaCorrectLeft This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided\&. 
+.PP
+Definition at line 67 of file image_rw\&.py\&.
+.SS "def image_rw\&.gammaCorrectRight ( self,  rightMaskArea)"
+
+.PP
+Documentation for the class gammaCorrectRight This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided\&. 
+.PP
+Definition at line 77 of file image_rw\&.py\&.
+.SS "def image_rw\&.getLeftRightImage ( self)"
+
+.PP
+The class is used to retrieve the divided parts of the original image after being divided\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIself\fP is the object pointer, points to the class itself 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file image_rw\&.py\&.
+.SS "def image_rw\&.writeFinalImage ( self,  image,  filename)"
+
+.PP
+Documentation for the class writeFinalImage the final image after the execution of all previous processes\&. write the final image in and update/replace the old unprocessed image 
+.PP
+Definition at line 86 of file image_rw\&.py\&.
+.SS "def image_rw\&.writeLeftCropped ( self,  leftImage)"
+
+.PP
+Documentation for the class writeleftCropped This class is to get the left part of unmask area of the iamge\&. 
+.PP
+Definition at line 49 of file image_rw\&.py\&.
+.SS "def image_rw\&.writeLeftMask ( self,  leftImage)"
+
+.PP
+Documentation for the class writeLeftMask This class is to mask the left part of divided image, specifically the left part after being divide\&. 
+.PP
+Definition at line 43 of file image_rw\&.py\&.
+.SS "def image_rw\&.writeRightCropped ( self,  rightImage)"
+
+.PP
+Documentation for the class writeRightCropped This class is to get the right part of unmask area of the iamge\&. 
+.PP
+Definition at line 61 of file image_rw\&.py\&.
+.SS "def image_rw\&.writeRightMask ( self,  rightImage)"
+
+.PP
+Documentation for the class writeRightMask This class is to mask the left part of divided image, specifically the right part after being divided\&. 
+.PP
+Definition at line 55 of file image_rw\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for G12 PBL 4 project from the source code\&.

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespacemain" kind="namespace" language="Python">
+    <compoundname>main</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemain_1ac9b7d0904193a13f765d94ec98c2973f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.leftImage</definition>
+        <argsstring></argsstring>
+        <name>leftImage</name>
+        <briefdescription>
+<para>Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="12" column="1" bodyfile="main.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a708ac4ec7a137f02058272200cd88914" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.rightImage</definition>
+        <argsstring></argsstring>
+        <name>rightImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="12" column="1" bodyfile="main.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a1018ab43480185ef4266610c78843bc9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.leftUnmaskArea</definition>
+        <argsstring></argsstring>
+        <name>leftUnmaskArea</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().writeLeftCropped(<ref refid="namespacemain_1ac9b7d0904193a13f765d94ec98c2973f" kindref="member">leftImage</ref>)</initializer>
+        <briefdescription>
+<para>Documentation for definition class assigning value to the variable leftUnmaskArea and leftMaskArea defining the function of 2 variables leftUnmaskArea creates an unmasked area based on the left part of the image, specifically after being divided leftMaskArea creates a masked area based on the left part of the iamge, specifically after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="19" column="1" bodyfile="main.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a0b5e23d286a7e52bb6e1f000afa81fe0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.leftMaskArea</definition>
+        <argsstring></argsstring>
+        <name>leftMaskArea</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().writeLeftMask(<ref refid="namespacemain_1ac9b7d0904193a13f765d94ec98c2973f" kindref="member">leftImage</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="20" column="1" bodyfile="main.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1ae2372092f3b18cc227874b5cf63c8a62" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.rightUnmaskArea</definition>
+        <argsstring></argsstring>
+        <name>rightUnmaskArea</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().writeRightCropped(<ref refid="namespacemain_1a708ac4ec7a137f02058272200cd88914" kindref="member">rightImage</ref>)</initializer>
+        <briefdescription>
+<para>Documentation for definition class assigning value to the variable rightUnmaskArea and rightMaskArea defining the function of 2 variables rightUnmaskArea creates an unmasked area based on the right part of the image, specifically after being divided rightMaskArea creates a masked area based on the right part of the image, specifically after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="27" column="1" bodyfile="main.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a55f6c93a1806f70f69848a6440f1e2f2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.rightMaskArea</definition>
+        <argsstring></argsstring>
+        <name>rightMaskArea</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().writeRightMask(<ref refid="namespacemain_1a708ac4ec7a137f02058272200cd88914" kindref="member">rightImage</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="28" column="1" bodyfile="main.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a7e4dc3953971e55a0579b1d0cdcca6c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.maskLeft</definition>
+        <argsstring></argsstring>
+        <name>maskLeft</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().gammaCorrectLeft(<ref refid="namespacemain_1a0b5e23d286a7e52bb6e1f000afa81fe0" kindref="member">leftMaskArea</ref>)</initializer>
+        <briefdescription>
+<para>Documentation for definition class assigning values to varialbes maskLeft and maskRight, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="33" column="1" bodyfile="main.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1ab5ba24812c4aab089f46d7baeb6f0aa9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.maskRight</definition>
+        <argsstring></argsstring>
+        <name>maskRight</name>
+        <initializer>=  <ref refid="classimage__rw_1_1_image_r_w" kindref="compound">ImageRW</ref>().gammaCorrectRight(<ref refid="namespacemain_1a55f6c93a1806f70f69848a6440f1e2f2" kindref="member">rightMaskArea</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="34" column="1" bodyfile="main.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a4a1665c8e7e27237385bf1bf668fd5ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.finalLeft</definition>
+        <argsstring></argsstring>
+        <name>finalLeft</name>
+        <initializer>=  <ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref>().stitchImage(<ref refid="namespacemain_1a1018ab43480185ef4266610c78843bc9" kindref="member">leftUnmaskArea</ref>, <ref refid="namespacemain_1a7e4dc3953971e55a0579b1d0cdcca6c7" kindref="member">maskLeft</ref>)</initializer>
+        <briefdescription>
+<para>Documentation for definition class assigning values to varialbes finalLeft and finalRight, which are used to stitch the 2 parts of the image ater being divided finalLeft is to process the left part of the image after it&apos;s gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries finalRight is to process the right part of the image after it&apos;s gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="40" column="1" bodyfile="main.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1aaafa0dbd93459bb2c5188ef01efcc755" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.finalRight</definition>
+        <argsstring></argsstring>
+        <name>finalRight</name>
+        <initializer>=  <ref refid="classmain__stitcher_1_1_main_stitcher" kindref="compound">MainStitcher</ref>().stitchImage(<ref refid="namespacemain_1ab5ba24812c4aab089f46d7baeb6f0aa9" kindref="member">maskRight</ref>, <ref refid="namespacemain_1ae2372092f3b18cc227874b5cf63c8a62" kindref="member">rightUnmaskArea</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="41" column="1" bodyfile="main.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

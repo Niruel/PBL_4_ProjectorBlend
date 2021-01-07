@@ -1,0 +1,57 @@
+.TH "main.py" 3 "Thu Jan 7 2021" "G12 PBL 4 project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBmain\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBmain\&.leftImage\fP"
+.br
+.RI "Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image\&. "
+.ti -1c
+.RI "\fBmain\&.rightImage\fP"
+.br
+.ti -1c
+.RI "\fBmain\&.leftUnmaskArea\fP = ImageRW()\&.writeLeftCropped(leftImage)"
+.br
+.RI "Documentation for definition class assigning value to the variable leftUnmaskArea and leftMaskArea defining the function of 2 variables leftUnmaskArea creates an unmasked area based on the left part of the image, specifically after being divided leftMaskArea creates a masked area based on the left part of the iamge, specifically after being divided\&. "
+.ti -1c
+.RI "\fBmain\&.leftMaskArea\fP = ImageRW()\&.writeLeftMask(leftImage)"
+.br
+.ti -1c
+.RI "\fBmain\&.rightUnmaskArea\fP = ImageRW()\&.writeRightCropped(rightImage)"
+.br
+.RI "Documentation for definition class assigning value to the variable rightUnmaskArea and rightMaskArea defining the function of 2 variables rightUnmaskArea creates an unmasked area based on the right part of the image, specifically after being divided rightMaskArea creates a masked area based on the right part of the image, specifically after being divided\&. "
+.ti -1c
+.RI "\fBmain\&.rightMaskArea\fP = ImageRW()\&.writeRightMask(rightImage)"
+.br
+.ti -1c
+.RI "\fBmain\&.maskLeft\fP = ImageRW()\&.gammaCorrectLeft(leftMaskArea)"
+.br
+.RI "Documentation for definition class assigning values to varialbes maskLeft and maskRight, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided\&. "
+.ti -1c
+.RI "\fBmain\&.maskRight\fP = ImageRW()\&.gammaCorrectRight(rightMaskArea)"
+.br
+.ti -1c
+.RI "\fBmain\&.finalLeft\fP = MainStitcher()\&.stitchImage(leftUnmaskArea, maskLeft)"
+.br
+.RI "Documentation for definition class assigning values to varialbes finalLeft and finalRight, which are used to stitch the 2 parts of the image ater being divided finalLeft is to process the left part of the image after it's gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries finalRight is to process the right part of the image after it's gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries\&. "
+.ti -1c
+.RI "\fBmain\&.finalRight\fP = MainStitcher()\&.stitchImage(maskRight, rightUnmaskArea)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for G12 PBL 4 project from the source code\&.

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classconfig__reader_1_1_config_reader" kind="class" language="Python" prot="public">
+    <compoundname>config_reader::ConfigReader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_reader.ConfigReader::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="19" column="1" bodyfile="config_reader.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__reader_1_1_config_reader_1aa247f76066b6227f08bcf6aec6e5b289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def config_reader.ConfigReader.__init__</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+<para>main class The constructor, defining all the methods of the main class(configure values of the image) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config_reader.py" line="18" column="1" bodyfile="config_reader.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main class is <ref refid="namespaceconfig__reader" kindref="compound">config_reader</ref> The class is for reading the values of the image. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>object</label>
+      </node>
+      <node id="1">
+        <label>config_reader.ConfigReader</label>
+        <link refid="classconfig__reader_1_1_config_reader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>object</label>
+      </node>
+      <node id="1">
+        <label>config_reader.ConfigReader</label>
+        <link refid="classconfig__reader_1_1_config_reader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="config_reader.py" line="13" column="1" bodyfile="config_reader.py" bodystart="13" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classconfig__reader_1_1_config_reader_1aa247f76066b6227f08bcf6aec6e5b289" prot="public" virt="non-virtual"><scope>config_reader::ConfigReader</scope><name>__init__</name></member>
+      <member refid="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" prot="public" virt="non-virtual"><scope>config_reader::ConfigReader</scope><name>config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

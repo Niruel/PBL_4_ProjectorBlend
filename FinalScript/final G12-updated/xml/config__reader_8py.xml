@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="config__reader_8py" kind="file" language="Python">
+    <compoundname>config_reader.py</compoundname>
+    <innerclass refid="classconfig__reader_1_1_config_reader" prot="public">config_reader::ConfigReader</innerclass>
+    <innernamespace refid="namespaceconfig__reader">config_reader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceconfig__reader" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#!/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>˅</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>configparser</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classconfig__reader_1_1_config_reader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classconfig__reader_1_1_config_reader" kindref="compound">ConfigReader</ref>(object):</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="classconfig__reader_1_1_config_reader_1aa247f76066b6227f08bcf6aec6e5b289" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classconfig__reader_1_1_config_reader_1aa247f76066b6227f08bcf6aec6e5b289" kindref="member">__init__</ref><sp/>(self,<sp/>filename):</highlight></codeline>
+<codeline lineno="19" refid="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" kindref="member">config</ref><sp/>=<sp/>configparser.ConfigParser()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classconfig__reader_1_1_config_reader_1a1df4724010618317bf612317db7624d8" kindref="member">config</ref>.read(filename)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceconfig__reader_1a9ec89050b492b2ef828a27db22f3fd45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1a9ec89050b492b2ef828a27db22f3fd45" kindref="member">getDistance</ref>(self):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>float(self.config[</highlight><highlight class="stringliteral">&apos;projector_distance&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;between_projector_distance&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceconfig__reader_1a8d763691199dc6d532405189b1359830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1a8d763691199dc6d532405189b1359830" kindref="member">getWidth</ref>(self):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>float(self.config[</highlight><highlight class="stringliteral">&apos;projector_distance&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;projector_image_width&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceconfig__reader_1a0f1066ed7dcaf74e7e6dcc33da6dd0a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1a0f1066ed7dcaf74e7e6dcc33da6dd0a5" kindref="member">getIMGWidth</ref>(self):</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int(self.config[</highlight><highlight class="stringliteral">&apos;image&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;img_width&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespaceconfig__reader_1aee73b96dcc17fefe0bd13d24a32e826f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1aee73b96dcc17fefe0bd13d24a32e826f" kindref="member">getIMGHeight</ref>(self):</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int(self.config[</highlight><highlight class="stringliteral">&apos;image&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;img_height&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespaceconfig__reader_1add941a1e87e3f2b20e7a424eec796cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1add941a1e87e3f2b20e7a424eec796cdb" kindref="member">getIMGName</ref>(self):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.config[</highlight><highlight class="stringliteral">&apos;image&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;img_name&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="namespaceconfig__reader_1a9ceb1fc9aa6fb70ca9c27d8a051f7e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceconfig__reader_1a9ceb1fc9aa6fb70ca9c27d8a051f7e2c" kindref="member">getGamma</ref>(self):</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>float(self.config[</highlight><highlight class="stringliteral">&apos;gamma_correction&apos;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&apos;gamma&apos;</highlight><highlight class="normal">])</highlight></codeline>
+    </programlisting>
+    <location file="config_reader.py"/>
+  </compounddef>
+</doxygen>

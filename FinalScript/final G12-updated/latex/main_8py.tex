@@ -1,0 +1,30 @@
+\hypertarget{main_8py}{}\doxysection{main.\+py File Reference}
+\label{main_8py}\index{main.py@{main.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemain}{main}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemain_ac9b7d0904193a13f765d94ec98c2973f}{main.\+left\+Image}}
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to the varaibles which will be used to represent the left and right part of the image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a708ac4ec7a137f02058272200cd88914}{main.\+right\+Image}}
+\item 
+\mbox{\hyperlink{namespacemain_a1018ab43480185ef4266610c78843bc9}{main.\+left\+Unmask\+Area}} = Image\+RW().write\+Left\+Cropped(left\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning value to the variable left\+Unmask\+Area and left\+Mask\+Area defining the function of 2 variables left\+Unmask\+Area creates an unmasked area based on the left part of the image, specifically after being divided left\+Mask\+Area creates a masked area based on the left part of the iamge, specifically after being divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a0b5e23d286a7e52bb6e1f000afa81fe0}{main.\+left\+Mask\+Area}} = Image\+RW().write\+Left\+Mask(left\+Image)
+\item 
+\mbox{\hyperlink{namespacemain_ae2372092f3b18cc227874b5cf63c8a62}{main.\+right\+Unmask\+Area}} = Image\+RW().write\+Right\+Cropped(right\+Image)
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning value to the variable right\+Unmask\+Area and right\+Mask\+Area defining the function of 2 variables right\+Unmask\+Area creates an unmasked area based on the right part of the image, specifically after being divided right\+Mask\+Area creates a masked area based on the right part of the image, specifically after being divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_a55f6c93a1806f70f69848a6440f1e2f2}{main.\+right\+Mask\+Area}} = Image\+RW().write\+Right\+Mask(right\+Image)
+\item 
+\mbox{\hyperlink{namespacemain_a7e4dc3953971e55a0579b1d0cdcca6c7}{main.\+mask\+Left}} = Image\+RW().gamma\+Correct\+Left(left\+Mask\+Area)
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to varialbes mask\+Left and mask\+Right, which are used to correct the gamma values of the image the function of the 2 variables are for gamma correction after the image is divided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_ab5ba24812c4aab089f46d7baeb6f0aa9}{main.\+mask\+Right}} = Image\+RW().gamma\+Correct\+Right(right\+Mask\+Area)
+\item 
+\mbox{\hyperlink{namespacemain_a4a1665c8e7e27237385bf1bf668fd5ac}{main.\+final\+Left}} = Main\+Stitcher().stitch\+Image(left\+Unmask\+Area, mask\+Left)
+\begin{DoxyCompactList}\small\item\em Documentation for definition class assigning values to varialbes final\+Left and final\+Right, which are used to stitch the 2 parts of the image ater being divided final\+Left is to process the left part of the image after it\textquotesingle{}s gamma corrected, giving the final product image (works with the stitcher of the right part to connect smoothly on boundaries final\+Right is to process the right part of the image after it\textquotesingle{}s gamma corrected, giving the final product image(works with the stitcher of the left part to connect smoothly on boundaries. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemain_aaafa0dbd93459bb2c5188ef01efcc755}{main.\+final\+Right}} = Main\+Stitcher().stitch\+Image(mask\+Right, right\+Unmask\+Area)
+\end{DoxyCompactItemize}

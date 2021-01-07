@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespaceimage__rw" kind="namespace" language="Python">
+    <compoundname>image_rw</compoundname>
+    <innerclass refid="classimage__rw_1_1_image_r_w" prot="public">image_rw::ImageRW</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceimage__rw_1aa760c877a2ff5504d4862fe656470f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.getLeftRightImage</definition>
+        <argsstring>(self)</argsstring>
+        <name>getLeftRightImage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>The class is used to retrieve the divided parts of the original image after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the object pointer, points to the class itself </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="36" column="1" bodyfile="image_rw.py" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1a4849b187732b295b535b76c34b222dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.writeLeftMask</definition>
+        <argsstring>(self, leftImage)</argsstring>
+        <name>writeLeftMask</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>leftImage</type>
+          <defname>leftImage</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class writeLeftMask This class is to mask the left part of divided image, specifically the left part after being divide. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="43" column="1" bodyfile="image_rw.py" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1a2b0f6ca8697f0fe29bcf856642bedfc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.writeLeftCropped</definition>
+        <argsstring>(self, leftImage)</argsstring>
+        <name>writeLeftCropped</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>leftImage</type>
+          <defname>leftImage</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class writeleftCropped This class is to get the left part of unmask area of the iamge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="49" column="1" bodyfile="image_rw.py" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1a5779dcf65a6aaaf08b1fd0c5bc65644e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.writeRightMask</definition>
+        <argsstring>(self, rightImage)</argsstring>
+        <name>writeRightMask</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rightImage</type>
+          <defname>rightImage</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class writeRightMask This class is to mask the left part of divided image, specifically the right part after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="55" column="1" bodyfile="image_rw.py" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1ac4672f2acd58fd1c906dddeb6589e9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.writeRightCropped</definition>
+        <argsstring>(self, rightImage)</argsstring>
+        <name>writeRightCropped</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rightImage</type>
+          <defname>rightImage</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class writeRightCropped This class is to get the right part of unmask area of the iamge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="61" column="1" bodyfile="image_rw.py" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1ab233309fe856ef22ae1aa4a143eb8278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.gammaCorrectLeft</definition>
+        <argsstring>(self, leftMaskArea)</argsstring>
+        <name>gammaCorrectLeft</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>leftMaskArea</type>
+          <defname>leftMaskArea</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class gammaCorrectLeft This class is to correct the gamma value(brightness, contrast of the image details) specifically the left part after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="67" column="1" bodyfile="image_rw.py" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1a73ecd3f8380f6de6ac88b92432f87399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.gammaCorrectRight</definition>
+        <argsstring>(self, rightMaskArea)</argsstring>
+        <name>gammaCorrectRight</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rightMaskArea</type>
+          <defname>rightMaskArea</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class gammaCorrectRight This class is to correct the gamma value(brightness, contrast of the image details) specifically the right part after being divided. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="77" column="1" bodyfile="image_rw.py" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimage__rw_1aa2c76bea77bec61419f9acdfc43481ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def image_rw.writeFinalImage</definition>
+        <argsstring>(self, image, filename)</argsstring>
+        <name>writeFinalImage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+<para>Documentation for the class writeFinalImage the final image after the execution of all previous processes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>write the final image in and update/replace the old unprocessed image </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image_rw.py" line="86" column="1" bodyfile="image_rw.py" bodystart="86" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="image_rw.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
